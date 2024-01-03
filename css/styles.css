@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Single Day', cursive;
+}
+
+main {
+  max-width: 100%;
+  min-height: 640px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center; 
+  padding-top: 1rem;
+  background-color: yellow;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;  
+}
+
+header h1 {  
+  font-size: 4rem;
+  letter-spacing: 3px;
+
+}
+
+header button {
+  padding: .5rem;
+  border-radius: 6px;
+  color: #fff;
+  background-color: green;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+header button:hover {
+  background-color: rgb(138, 226, 138);
+  transition: .5s;
+}
+
+form {
+  text-align: center;
+  margin-top: 2rem;
+  display: none; 
+}
+
+form h2 {
+  margin-bottom: 2rem;  
+}
+
+form input {
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.2);
+  font-size: 1.2rem;
+}
+
+form input:focus {
+  outline-color: yellow;
+}
+
+form button {
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+#add {
+  background-color: green;
+  color: #fff;
+}
+
+#add:hover {
+  background-color: rgb(138, 226, 138);
+  transition: .5s;
+}
+
+#cancel {
+  background-color: red;
+  color: #fff;
+}
+
+#cancel:hover {
+  background-color: rgb(224, 130, 130);
+  transition: .5s;
+}
+
+article {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+article ul {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(138, 226, 138, .1);
+  padding: 2rem;
+  width: 90%;
+  margin: 0 auto 1rem;
+  border-radius: 8px;    
+}
+
+article ul:hover {
+  box-shadow: 0 4px 8px rgba(138, 226, 138, 0.9);
+}
+
+article ul:hover { 
+  text-decoration: line-through;
+}
+
+ul li {
+  list-style: none;
+}
+
+footer p {
+  text-align: right;
+  padding: 1rem;
+  background-color: yellow;
+}
