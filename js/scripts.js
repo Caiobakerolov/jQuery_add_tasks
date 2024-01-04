@@ -12,18 +12,19 @@ $(document).ready(function() {
 
     const addressTitle = $('#taskTitle').val();
     const addressDescription = $('#taskDescription').val();
-    const containerDescription = $(`<ul style= "display: block"></ul>`)
+    const containerDescription = $(`<ul style= "display: block"></ul>`);
     const newItem = $('<li style= "display: none"></li>');
-    $(`<p>${addressTitle}</p> <p>${addressDescription}</p>`).appendTo(newItem);
-    $(containerDescription).appendTo('article')
+    const strikeThrough = $(`<p style="font-size: 2.2rem">${addressTitle}</p> <p>${addressDescription}</p>`);
+    $(strikeThrough).appendTo(newItem);
+    $(containerDescription).appendTo('article');
     $(newItem).appendTo('ul');
     $(newItem).fadeIn(2000);    
-    $('#taskTitle, #taskDescription').val('');    
+    $('#taskTitle, #taskDescription').val(''); 
 
-  });
+    $(strikeThrough).click(function() {
+      $(this).toggleClass('strike-through')
+    });
 
-  $('article').click(function() {
-    $(this).toggleClass('strike-through')    
-  });
+  }); 
 
 });
