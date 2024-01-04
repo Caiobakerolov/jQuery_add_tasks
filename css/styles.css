@@ -94,24 +94,25 @@ form button {
 
 article {
   margin-top: 3rem;
-  text-align: center;
+  text-align: center;  
 }
 
 article ul {
   display: flex;
   justify-content: center;
   background-color: rgba(138, 226, 138, .1);
-  padding: 2rem;
-  width: 90%;
-  margin: 0 auto 1rem;
+  padding: 1.5rem;
+  width: 50%;
+  margin: 0 auto 2rem;
   border-radius: 8px;    
 }
 
 article ul:hover {
   box-shadow: 0 4px 8px rgba(138, 226, 138, 0.9);
+  transition: .2s;
 }
 
-article ul:hover { 
+.strike-through { 
   text-decoration: line-through;
 }
 

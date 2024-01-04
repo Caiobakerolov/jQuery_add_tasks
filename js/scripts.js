@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $('#btnHeader').click(function(){
     $('form').slideDown();
-  })
+  });
 
   $('#cancel').click(function() {
     $('form').slideUp();
-  })
+  });
 
   $('form').on('submit', function(e) {    
     e.preventDefault();    
@@ -21,4 +21,9 @@ $(document).ready(function() {
     $('#taskTitle, #taskDescription').val('');    
 
   });
+
+  $('article').click(function() {
+    $(this).toggleClass('strike-through')    
+  });
+
 });
